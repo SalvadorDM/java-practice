@@ -34,27 +34,23 @@ public class ej12extra {
         
          
             
-            while(num2 != 9 || num3 != 9 || num1 != 9){
-        num3 += 1;
+        while(num2 != 9 || num3 != 9 || num1 != 9){
+            num3 += 1;
         
-        cambiar3(num1, num2, num3);
-        
-        
-           
-        
-        if (num3 == 9 && num2 != 9) {
-            num3 = 0;
-            num2 += 1;
-            cambiar3(num1, num2, num3); }
-        if (num2 == 9 && num3 == 9) {
-            num1 += 1;             
-            num2 = 0;
-            num3 = 0;
-            if (num1 > 9){
-              break;
-           }
             cambiar3(num1, num2, num3);
-            
+        
+            if (num3 == 9 && num2 != 9) {
+                num3 = 0;
+                num2 += 1;
+                cambiar3(num1, num2, num3); }
+            if (num2 == 9 && num3 == 9) {
+                num1 += 1;             
+                num2 = 0;
+                num3 = 0;
+                if (num1 > 9){
+                    break;
+           }
+                cambiar3(num1, num2, num3);            
            
            }
         
